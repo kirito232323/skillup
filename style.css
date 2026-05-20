@@ -279,13 +279,12 @@ body {
 }
 
 #loginPage .login-card {
-    width: 100%;
-    max-width: 420px;
-    background: rgba(14, 18, 30, 0.98);
+    width: min(100%, 440px);
+    background: rgba(9, 13, 24, 0.92);
     border: 1px solid rgba(148, 163, 184, 0.12);
-    box-shadow: 0 22px 48px rgba(0, 0, 0, 0.45);
-    border-radius: 24px;
-    padding: 42px 34px;
+    box-shadow: 0 32px 60px rgba(0, 0, 0, 0.45);
+    border-radius: 28px;
+    padding: 44px 38px;
 }
 
 #loginPage .login-header {
@@ -294,7 +293,7 @@ body {
 }
 
 #loginPage .login-logo {
-    font-size: 34px;
+    font-size: 36px;
     font-weight: 800;
     color: var(--text-light);
     letter-spacing: 1px;
@@ -304,24 +303,25 @@ body {
 #loginPage .login-subtitle {
     font-size: 15px;
     color: #cbd5e1;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 #loginPage .login-card .form-group {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
 #loginPage .login-card .form-group div {
     position: relative;
 }
 
-#loginPage .login-card .form-group span {
+#loginPage .login-card .input-icon {
     position: absolute;
-    left: 14px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
     color: #94a3b8;
     pointer-events: none;
+    font-size: 16px;
 }
 
 #loginPage .login-card .form-input {
@@ -329,27 +329,30 @@ body {
     max-width: 100% !important;
     display: block;
     box-sizing: border-box !important;
-    padding: 14px 14px 14px 44px !important;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.04);
+    padding: 16px 16px 16px 48px !important;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
     color: var(--text-light);
-    min-height: 52px;
-    border: 1px solid rgba(148, 163, 184, 0.35);
+    min-height: 54px;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    transition: border-color 0.25s ease, background 0.25s ease;
 }
 
 #loginPage .login-card .form-input:focus {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(79, 109, 208, 0.75);
 }
 
 #loginPage .login-card .btn-primary {
     width: 100%;
     padding: 16px 20px;
     font-size: 15px;
-    border-radius: 12px;
+    border-radius: 16px;
     background-color: var(--primary-bg);
     color: var(--text-light);
-    box-shadow: 0 14px 28px rgba(79, 137, 205, 0.16);
+    box-shadow: 0 18px 32px rgba(79, 137, 205, 0.2);
     border: 1px solid transparent;
+    margin-top: 10px;
 }
 
 #loginPage .login-card .btn-primary:hover {

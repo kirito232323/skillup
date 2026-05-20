@@ -130,6 +130,30 @@ h1, h2, h3, h4, h5 {
     max-width: 1300px;
 }
 
+/* Force-remove any list markers in the right sidebar nav (high specificity) */
+.sidebar .nav-menu,
+.sidebar ul,
+.sidebar ol {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.sidebar .nav-menu li,
+.sidebar ul li,
+.sidebar ol li {
+    list-style: none !important;
+    margin: 6px 0 !important;
+}
+
+.sidebar .nav-menu li::marker,
+.sidebar ul li::marker,
+.sidebar ol li::marker {
+    display: none !important;
+}
+
+.sidebar .nav-menu a { display: inline-flex; align-items: center; gap: 10px; }
+
 .header-actions {
     display: flex;
     gap: 15px;

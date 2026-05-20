@@ -111,16 +111,16 @@
                     <div class="form-group">
                         <label class="form-label">Work Email</label>
                         <div style="position: relative;">
-                            <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #888;"><i class="bi bi-envelope"></i></span>
-                            <input type="email" id="loginEmail" class="form-input" placeholder="somebody@example.com" style="padding-left: 38px;" required>
+                            <span style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: #888;"><i class="bi bi-envelope"></i></span>
+                            <input type="email" id="loginEmail" class="form-input" placeholder="somebody@example.com" required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label">Password</label>
                         <div style="position: relative;">
-                            <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #888;"><i class="bi bi-lock"></i></span>
-                            <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" style="padding-left: 38px;" required>
+                            <span style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: #888;"><i class="bi bi-lock"></i></span>
+                            <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required>
                         </div>
                     </div>
 

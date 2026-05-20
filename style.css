@@ -325,13 +325,16 @@ body {
 }
 
 #loginPage .login-card .form-input {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 14px 14px 14px 44px;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block;
+    box-sizing: border-box !important;
+    padding: 14px 14px 14px 44px !important;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.04);
     color: var(--text-light);
     min-height: 52px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
 }
 
 #loginPage .login-card .form-input:focus {

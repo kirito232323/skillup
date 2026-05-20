@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: skillup
+    env: python
+    region: oregon
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn skillup.wsgi
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: skillup.settings
+      - key: DEBUG
+        value: 'False'

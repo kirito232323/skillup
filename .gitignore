@@ -1,0 +1,56 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Django database
+db.sqlite3
+*.sqlite3
+
+# Django static and media
+/staticfiles
+/media
+
+# Environment variables
+.env
+.env.*
+local_settings.py
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Pytest
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Ignore compiled python files from Django migrations if needed
+*.mo
+
+# Ignore database dumps
+*.sql

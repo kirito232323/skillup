@@ -312,11 +312,12 @@ body {
 
 #loginPage .login-card .form-group div {
     position: relative;
+    width: 100%;
 }
 
 #loginPage .login-card .input-icon {
     position: absolute;
-    left: 16px;
+    left: 18px;
     top: 50%;
     transform: translateY(-50%);
     color: #94a3b8;
@@ -329,7 +330,7 @@ body {
     max-width: 100% !important;
     display: block;
     box-sizing: border-box !important;
-    padding: 16px 16px 16px 48px !important;
+    padding: 16px 16px 16px 54px !important;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.05);
     color: var(--text-light);

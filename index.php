@@ -83,11 +83,12 @@
 
         .login-card .form-group div {
             position: relative;
+            width: 100%;
         }
 
         .input-icon {
             position: absolute;
-            left: 14px;
+            left: 18px;
             top: 50%;
             transform: translateY(-50%);
             color: #94a3b8;
@@ -96,13 +97,14 @@
 
         .form-input {
             width: 100%;
-            padding: 14px 14px 14px 44px;
+            padding: 14px 14px 14px 54px;
             border: 1px solid rgba(148, 163, 184, 0.18);
             border-radius: 14px;
             background-color: rgba(255, 255, 255, 0.05);
             color: var(--text-light);
             font-size: 15px;
             transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+            box-sizing: border-box;
         }
 
         .form-input::placeholder {

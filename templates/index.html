@@ -168,6 +168,17 @@
         .input-with-icon .input-icon { left: 12px; }
         .login-submit { width: 100%; margin-bottom: 10px; padding: 14px; font-size: 15px; }
 
+        .admin-welcome { font-size: 16px; color: #cbd5e1; margin-bottom: 6px; font-weight: 600; }
+        .admin-hero-card { background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent); border: 1px solid var(--border-color); padding: 20px; border-radius: 12px; margin-bottom: 18px; }
+        .admin-hero-top { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+        .admin-hero-badge { background: var(--surface-bg); padding: 8px 12px; border-radius: 999px; color: #94a3b8; font-weight: 700; font-size: 12px; }
+        .admin-stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-top: 16px; }
+        .admin-stat-card { background: var(--card-bg); border: 1px solid var(--border-color); padding: 16px; border-radius: 10px; text-align: center; }
+        .admin-stat-icon { width: 44px; height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto 8px auto; }
+        .admin-stat-number { font-size: 20px; font-weight: 800; color: #fff; }
+        .admin-stat-label { font-size: 12px; color: #9ca3af; margin-top: 6px; }
+        @media(max-width: 992px) { .admin-stats-grid { grid-template-columns: 1fr 1fr; } }
+
         /* Layout Framework Adjustments */
         .w-100 { width: 100%; }
         .mt-10 { margin-top: 10px; }
@@ -188,6 +199,15 @@
         
         .nav-menu li a { cursor: pointer; display: flex; align-items: center; gap: 10px; }
         .text-danger { color: var(--accent-color) !important; }
+        .sidebar-header { font-size: 18px; font-weight: 800; padding: 18px 0; color: var(--text-light); }
+        .sidebar-user { padding: 12px 0; border-bottom: 1px solid var(--border-color); margin-bottom: 16px; }
+        .sidebar-user .name { font-weight: 700; font-size: 14px; color: #fff; }
+        .user-role-badge { display: inline-block; margin-top: 6px; font-size: 11px; padding: 6px 8px; background: var(--surface-bg); border-radius: 999px; color: #94a3b8; text-transform: uppercase; }
+        .nav-menu { list-style: none; padding: 0; margin: 0; }
+        .nav-menu li { margin-bottom: 8px; }
+        .nav-menu a { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border-radius: 8px; color: #94a3b8; text-decoration: none; }
+        .nav-menu a.active, .nav-menu a:hover { background: var(--surface-bg); color: #fff; }
+        .nav-icon { font-size: 18px; display: inline-block; width: 22px; text-align: center; }
         
         /* High-Fidelity Form UI Elements */
         .gform-canvas { max-width: 760px; margin: 0 auto; }
@@ -271,9 +291,9 @@
         <div class="container">
             <aside class="sidebar">
                 <div class="sidebar-header">SkillUp</div>
-                <div style="padding: 0 0 20px 0; border-bottom: 1px solid var(--border-color); margin-bottom: 20px;">
-                    <div id="sidebarUserName" style="font-weight: 600; font-size: 15px;">User Name</div>
-                    <div id="sidebarUserRole" class="badge badge-primary" style="margin-top: 5px; text-transform: uppercase; font-size: 10px;">Role</div>
+                <div class="sidebar-user">
+                    <div id="sidebarUserName" class="name">User Name</div>
+                    <div id="sidebarUserRole" class="user-role-badge">Role</div>
                 </div>
                 <ul class="nav-menu" id="dynamicNavMenu"></ul>
             </aside>
@@ -691,13 +711,15 @@
 
                                 <div>
 
-                                    <h1 class="admin-hero-title">
-                                        Organization Intelligence Dashboard
-                                    </h1>
+                                        <div class="admin-welcome">Welcome Back, <span class="lbl-display-fullname">User</span>!</div>
 
-                                    <p class="admin-hero-subtitle">
-                                        Monitor workforce competency readiness, platform operations, and enterprise learning performance.
-                                    </p>
+                                        <h1 class="admin-hero-title">
+                                            Organization Intelligence Dashboard
+                                        </h1>
+
+                                        <p class="admin-hero-subtitle">
+                                            Monitor workforce competency readiness, platform operations, and enterprise learning performance.
+                                        </p>
 
                                 </div>
 

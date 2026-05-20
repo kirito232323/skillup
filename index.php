@@ -93,16 +93,18 @@
             transform: translateY(-50%);
             color: #94a3b8;
             pointer-events: none;
+            z-index: 2;
         }
 
         .form-input {
             width: 100%;
-            padding: 14px 14px 14px 54px;
+            padding: 16px 16px 16px 60px;
             border: 1px solid rgba(148, 163, 184, 0.18);
             border-radius: 14px;
             background-color: rgba(255, 255, 255, 0.05);
             color: var(--text-light);
             font-size: 15px;
+            line-height: 1.4;
             transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
             box-sizing: border-box;
         }

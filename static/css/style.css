@@ -467,7 +467,9 @@ textarea:focus {
 }
 
 .login-card .form-input {
-    padding-left: 42px;
+    width: 100%;
+    padding-left: 60px;
+    box-sizing: border-box;
 }
 
 .login-card .form-input + span,
@@ -478,24 +480,16 @@ textarea:focus {
 
 .login-card .form-group div {
     position: relative;
+    width: 100%;
 }
 
 .login-card .form-group span {
     position: absolute;
-    left: 14px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.login-card .form-input {
-    width: 100%;
-}
-
-.role-selector {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
+    pointer-events: none;
+    z-index: 2;
 
 .role-option {
     flex: 1;

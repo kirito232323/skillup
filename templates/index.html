@@ -30,155 +30,6 @@
             color: var(--text-dark);
         }
 
-        .login-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 40px 20px;
-            background: radial-gradient(circle at top left, rgba(79, 137, 205, 0.2), transparent 35%),
-                        radial-gradient(circle at bottom right, rgba(244, 63, 94, 0.15), transparent 30%),
-                        linear-gradient(180deg, #090b14 0%, #111827 100%);
-        }
-
-        .login-card {
-            width: 100%;
-            max-width: 420px;
-            background: rgba(14, 18, 30, 0.98);
-            border: 1px solid rgba(148, 163, 184, 0.12);
-            box-shadow: 0 22px 48px rgba(0, 0, 0, 0.45);
-            border-radius: 24px;
-            padding: 42px 34px;
-        }
-
-        .login-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .login-logo {
-            font-size: 34px;
-            font-weight: 800;
-            color: var(--text-dark);
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
-
-        .login-subtitle {
-            font-size: 20px;
-            color: var(--text-light);
-            line-height: 1.2;
-            font-weight: 700;
-            margin-top: 8px;
-        }
-
-        .login-desc {
-            font-size: 13px;
-            color: #aaa;
-            margin-top: 6px;
-        }
-
-        .alert-error {
-            display: none;
-            padding: 10px;
-            background: rgba(255,107,107,0.12);
-            border: 1px solid var(--accent-color);
-            border-radius: 6px;
-            color: #ffb3b3;
-            font-size: 13px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: var(--text-light);
-        }
-
-        .form-input {
-            width: 100%;
-            padding: 14px 14px 14px 44px;
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.04);
-            color: var(--text-light);
-            font-size: 15px;
-        }
-
-        .form-input:focus {
-            outline: none;
-            border-color: var(--primary-bg);
-            box-shadow: 0 0 0 4px rgba(79, 137, 205, 0.18);
-        }
-
-        .login-card .btn-primary {
-            width: 100%;
-            padding: 16px 20px;
-            font-size: 15px;
-            border-radius: 12px;
-            background-color: var(--primary-bg);
-            color: var(--text-dark);
-            box-shadow: 0 14px 28px rgba(79, 137, 205, 0.16);
-            border: 1px solid transparent;
-        }
-
-        .login-card .btn-primary:hover {
-            background-color: #3a5a94;
-            transform: translateY(-1px);
-        }
-
-        .input-icon {
-            position: absolute;
-            left: 18px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #94a3b8;
-            pointer-events: none;
-            z-index: 2;
-        }
-
-        .login-card .form-group div {
-            position: relative;
-            width: 100%;
-        }
-
-        .login-card .form-group div .bi {
-            position: absolute;
-            left: 18px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #94a3b8;
-            pointer-events: none;
-            z-index: 2;
-        }
-
-        .login-card .form-group input {
-            padding-left: 60px !important;
-            box-sizing: border-box;
-            width: 100% !important;
-        }
-
-        .input-with-icon { position: relative; }
-        .input-with-icon .input-icon { left: 12px; }
-        .login-submit { width: 100%; margin-bottom: 10px; padding: 14px; font-size: 15px; }
-
-        .admin-welcome { font-size: 16px; color: #cbd5e1; margin-bottom: 6px; font-weight: 600; }
-        .admin-hero-card { background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent); border: 1px solid var(--border-color); padding: 20px; border-radius: 12px; margin-bottom: 18px; }
-        .admin-hero-top { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
-        .admin-hero-badge { background: var(--surface-bg); padding: 8px 12px; border-radius: 999px; color: #94a3b8; font-weight: 700; font-size: 12px; }
-        .admin-stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-top: 16px; }
-        .admin-stat-card { background: var(--card-bg); border: 1px solid var(--border-color); padding: 16px; border-radius: 10px; text-align: center; }
-        .admin-stat-icon { width: 44px; height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto 8px auto; }
-        .admin-stat-number { font-size: 20px; font-weight: 800; color: #fff; }
-        .admin-stat-label { font-size: 12px; color: #9ca3af; margin-top: 6px; }
-        @media(max-width: 992px) { .admin-stats-grid { grid-template-columns: 1fr 1fr; } }
-
         /* Layout Framework Adjustments */
         .w-100 { width: 100%; }
         .mt-10 { margin-top: 10px; }
@@ -199,15 +50,6 @@
         
         .nav-menu li a { cursor: pointer; display: flex; align-items: center; gap: 10px; }
         .text-danger { color: var(--accent-color) !important; }
-        .sidebar-header { font-size: 18px; font-weight: 800; padding: 18px 0; color: var(--text-light); }
-        .sidebar-user { padding: 12px 0; border-bottom: 1px solid var(--border-color); margin-bottom: 16px; }
-        .sidebar-user .name { font-weight: 700; font-size: 14px; color: #fff; }
-        .user-role-badge { display: inline-block; margin-top: 6px; font-size: 11px; padding: 6px 8px; background: var(--surface-bg); border-radius: 999px; color: #94a3b8; text-transform: uppercase; }
-        .nav-menu { list-style: none; padding: 0; margin: 0; }
-        .nav-menu li { margin-bottom: 8px; }
-        .nav-menu a { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border-radius: 8px; color: #94a3b8; text-decoration: none; }
-        .nav-menu a.active, .nav-menu a:hover { background: var(--surface-bg); color: #fff; }
-        .nav-icon { font-size: 18px; display: inline-block; width: 22px; text-align: center; }
         
         /* High-Fidelity Form UI Elements */
         .gform-canvas { max-width: 760px; margin: 0 auto; }
@@ -258,30 +100,32 @@
             <div class="login-card">
                 <div class="login-header">
                     <div class="login-logo">SkillUp</div>
-                    <div class="login-subtitle">Welcome Back</div>
-                    <p class="login-desc">Sign in to continue your growth journey</p>
+                    <div class="login-subtitle" style="font-size: 20px; font-weight: 700; color: var(--text-light); margin-top: 8px;">Welcome Back</div>
+                    <p style="font-size: 13px; color: #aaa; margin-top: 6px;">Sign in to continue your growth journey</p>
                 </div>
 
-                <div id="loginError" class="alert-error">Invalid credentials.</div>
+                <div id="loginError" style="display: none; padding: 10px; background: rgba(255,107,107,0.2); border: 1px solid var(--accent-color); border-radius: 6px; color: #ff9999; font-size: 13px; margin-bottom: 15px; text-align: center;">
+                    Invalid credentials.
+                </div>
 
                 <form onsubmit="handleLogin(event)">
                     <div class="form-group">
                         <label class="form-label">Work Email</label>
-                        <div class="input-with-icon">
-                            <span class="input-icon"><i class="bi bi-envelope"></i></span>
-                            <input type="email" id="loginEmail" class="form-input" placeholder="somebody@example.com" required>
+                        <div style="position: relative;">
+                            <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #888;"><i class="bi bi-envelope"></i></span>
+                            <input type="email" id="loginEmail" class="form-input" placeholder="somebody@example.com" style="padding-left: 38px;" required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label">Password</label>
-                        <div class="input-with-icon">
-                            <span class="input-icon"><i class="bi bi-lock"></i></span>
-                            <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required>
+                        <div style="position: relative;">
+                            <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #888;"><i class="bi bi-lock"></i></span>
+                            <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" style="padding-left: 38px;" required>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary login-submit">Login</button>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 10px; padding: 14px; font-size: 15px;">Login</button>
                 </form>
             </div>
         </div>
@@ -291,9 +135,9 @@
         <div class="container">
             <aside class="sidebar">
                 <div class="sidebar-header">SkillUp</div>
-                <div class="sidebar-user">
-                    <div id="sidebarUserName" class="name">User Name</div>
-                    <div id="sidebarUserRole" class="user-role-badge">Role</div>
+                <div style="padding: 0 0 20px 0; border-bottom: 1px solid var(--border-color); margin-bottom: 20px;">
+                    <div id="sidebarUserName" style="font-weight: 600; font-size: 15px;">User Name</div>
+                    <div id="sidebarUserRole" class="badge badge-primary" style="margin-top: 5px; text-transform: uppercase; font-size: 10px;">Role</div>
                 </div>
                 <ul class="nav-menu" id="dynamicNavMenu"></ul>
             </aside>
@@ -711,15 +555,13 @@
 
                                 <div>
 
-                                        <div class="admin-welcome">Welcome Back, <span class="lbl-display-fullname">User</span>!</div>
+                                    <h1 class="admin-hero-title">
+                                        Organization Intelligence Dashboard
+                                    </h1>
 
-                                        <h1 class="admin-hero-title">
-                                            Organization Intelligence Dashboard
-                                        </h1>
-
-                                        <p class="admin-hero-subtitle">
-                                            Monitor workforce competency readiness, platform operations, and enterprise learning performance.
-                                        </p>
+                                    <p class="admin-hero-subtitle">
+                                        Monitor workforce competency readiness, platform operations, and enterprise learning performance.
+                                    </p>
 
                                 </div>
 
@@ -4773,477 +4615,5 @@
         }
 
         </script>
-    <script>
-        async function _apiFetch(path, options = {}) {
-            const response = await fetch(path, {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                ...options,
-            });
-            if (!response.ok) {
-                const text = await response.text();
-                throw new Error(text || response.statusText);
-            }
-            return response.json();
-        }
-
-        async function loadDynamicDashboardData() {
-            if (!CURRENT_ACTIVE_SESSION_USER) {
-                return;
-            }
-
-            if (CURRENT_ACTIVE_SESSION_USER.role === 'admin') {
-                await loadAdminUsers();
-            }
-
-            await loadEvaluationForms();
-            await loadTrainingCatalogItems();
-        }
-
-        async function loadAdminUsers() {
-            try {
-                const response = await fetch('api/get_users.php');
-                const data = await response.json();
-                if (!data.success) {
-                    SYSTEM_USERS_REPOSITORY = {};
-                    return;
-                }
-
-                SYSTEM_USERS_REPOSITORY = {};
-                data.users.forEach(user => {
-                    SYSTEM_USERS_REPOSITORY[user.email] = {
-                        firstName: user.first_name,
-                        lastName: user.last_name,
-                        jobTitle: user.job_title,
-                        role: user.role,
-                        track: user.track,
-                        password: '••••••••',
-                    };
-                });
-
-                const totalLabel = document.getElementById('lblAdminTotalUsers');
-                if (totalLabel) totalLabel.innerText = Object.keys(SYSTEM_USERS_REPOSITORY).length;
-                const adminTotalUsersLabel = document.getElementById('adminTotalUsers');
-                if (adminTotalUsersLabel) adminTotalUsersLabel.innerText = Object.keys(SYSTEM_USERS_REPOSITORY).length;
-                renderAdminActiveProfilesPasswordLedgerPanel();
-            } catch (error) {
-                console.error('Load admin users failed', error);
-            }
-        }
-
-        async function loadEvaluationForms() {
-            try {
-                const response = await fetch('api/get_evaluation_forms.php');
-                const data = await response.json();
-                if (data.success && Array.isArray(data.forms) && data.forms.length > 0) {
-                    DISTRIBUTED_EVALUATIONS_DB = data.forms;
-                } else if (!DISTRIBUTED_EVALUATIONS_DB || DISTRIBUTED_EVALUATIONS_DB.length === 0) {
-                    DISTRIBUTED_EVALUATIONS_DB = DISTRIBUTED_EVALUATIONS_DB || [];
-                }
-            } catch (error) {
-                console.error('Load evaluation forms failed', error);
-            }
-        }
-
-        async function loadTrainingCatalogItems() {
-            try {
-                const response = await fetch('api/get_training_modules.php');
-                const data = await response.json();
-                if (data.success && Array.isArray(data.modules) && data.modules.length > 0) {
-                    TRAINING_CATALOG_ITEMS = data.modules.map(module => ({
-                        id: module.id,
-                        title: module.title,
-                        track: module.track || 'All Tracks',
-                        domain: module.domain || 'General',
-                        summary: module.summary || '',
-                        hours: module.hours || 0,
-                        provider: module.provider || 'SkillUp Learning Registry',
-                        status: module.status || 'Active',
-                    }));
-                } else {
-                    TRAINING_CATALOG_ITEMS = DEFAULT_TRAINING_CATALOG_ITEMS;
-                }
-            } catch (error) {
-                console.error('Load training catalog failed', error);
-                TRAINING_CATALOG_ITEMS = DEFAULT_TRAINING_CATALOG_ITEMS;
-            }
-
-            populateTrainingCatalogTrackFilter();
-            renderTrainingCatalogSummary();
-            renderTrainingCatalogTable();
-            renderTrainingCatalogList();
-        }
-
-        async function initializeTrainingCatalogRouter() {
-            await loadTrainingCatalogItems();
-        }
-
-        async function addTrainingCatalogItem(event) {
-            event.preventDefault();
-            const title = document.getElementById('tcNewTitle').value.trim();
-            const track = document.getElementById('tcNewTrack').value;
-            const domain = document.getElementById('tcNewDomain').value.trim();
-            const hours = parseInt(document.getElementById('tcNewHours').value, 10);
-            const summary = document.getElementById('tcNewSummary').value.trim();
-
-            if (!title || !track || !domain || !summary || isNaN(hours)) {
-                alert('Please complete all training catalog fields before submitting.');
-                return;
-            }
-
-            try {
-                await _apiFetch('api/add_training_module.php', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        title,
-                        track,
-                        domain,
-                        hours,
-                        summary,
-                        provider: 'SkillUp Learning Registry',
-                    }),
-                });
-                document.getElementById('tcAddCourseForm').reset();
-                await initializeTrainingCatalogRouter();
-                showActiveSectionPane('training-catalog');
-                alert('New training program added to the catalog.');
-            } catch (error) {
-                console.error('Add training module failed', error);
-                alert('Failed to add training module.');
-            }
-        }
-
-        async function removeTrainingCatalogItem(index) {
-            const item = TRAINING_CATALOG_ITEMS[index];
-            if (!item) return;
-            if (!confirm('Remove this training program from the catalog?')) return;
-
-            if (item.id) {
-                try {
-                    await _apiFetch('api/delete_training_module.php', {
-                        method: 'POST',
-                        body: JSON.stringify({ id: item.id }),
-                    });
-                } catch (error) {
-                    console.error('Delete training module failed', error);
-                    alert('Failed to remove training module.');
-                    return;
-                }
-            }
-
-            TRAINING_CATALOG_ITEMS.splice(index, 1);
-            renderTrainingCatalogSummary();
-            renderTrainingCatalogTable();
-            renderTrainingCatalogList();
-        }
-
-        async function toggleTrainingCatalogStatus(index) {
-            const item = TRAINING_CATALOG_ITEMS[index];
-            if (!item) return;
-            const newStatus = item.status === 'Active' ? 'Inactive' : 'Active';
-
-            if (item.id) {
-                try {
-                    await _apiFetch('api/update_training_module_status.php', {
-                        method: 'POST',
-                        body: JSON.stringify({ id: item.id, status: newStatus }),
-                    });
-                } catch (error) {
-                    console.error('Update module status failed', error);
-                    alert('Failed to update training module status.');
-                    return;
-                }
-            }
-
-            item.status = newStatus;
-            renderTrainingCatalogSummary();
-            renderTrainingCatalogTable();
-            renderTrainingCatalogList();
-        }
-
-        async function saveTrainingCatalogItems() {
-            await initializeTrainingCatalogRouter();
-        }
-
-        async function executeAdminAccountProvisioning(e) {
-            e.preventDefault();
-            const first = document.getElementById('adminNewUserFirst').value.trim();
-            const last = document.getElementById('adminNewUserLast').value.trim();
-            const email = document.getElementById('adminNewUserEmail').value.trim();
-            const jobTitle = document.getElementById('adminNewUserJobTitle').value.trim();
-            const sysRole = document.getElementById('adminNewUserSysRole').value;
-            const track = document.getElementById('adminNewUserTrack').value;
-            const pass = document.getElementById('adminNewUserPass').value;
-
-            try {
-                await _apiFetch('api/create_user.php', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        first_name: first,
-                        last_name: last,
-                        email,
-                        job_title: jobTitle,
-                        role: sysRole,
-                        track,
-                        password: pass,
-                    }),
-                });
-                alert(`Account Node generated successfully for ${first} ${last}.\nPermissions mapped: ${sysRole}`);
-                document.getElementById('frmAdminCreateUserAccount').reset();
-                document.getElementById('adminNewUserPass').value = 'TemporaryPass123!';
-                await loadAdminUsers();
-            } catch (error) {
-                console.error('Create user failed', error);
-                alert('Unable to create user account.');
-            }
-        }
-
-        async function executeAdminForcedPasswordReset(targetUserEmailAddressKey) {
-            const freshlyGeneratedPasswordStringToken = 'ResetToken' + Math.floor(1000 + Math.random() * 9000) + '!';
-            try {
-                await _apiFetch('api/reset_user_password.php', {
-                    method: 'POST',
-                    body: JSON.stringify({ email: targetUserEmailAddressKey, password: freshlyGeneratedPasswordStringToken }),
-                });
-                const record = SYSTEM_USERS_REPOSITORY[targetUserEmailAddressKey];
-                if (!record) {
-                    alert('Target user could not be found in the local repository.');
-                    return;
-                }
-                record.password = freshlyGeneratedPasswordStringToken;
-                alert(`Credential override successful.\nTarget Node Profile: ${record.firstName} ${record.lastName}\nNew Immutable Credential Key: ${freshlyGeneratedPasswordStringToken}`);
-                renderAdminActiveProfilesPasswordLedgerPanel();
-            } catch (error) {
-                console.error('Reset password failed', error);
-                alert('Unable to reset user password.');
-            }
-        }
-
-        async function commitGoogleFormTemplate(e) {
-            e.preventDefault();
-            const formTitle = document.getElementById('gformTitle').value.trim();
-            const formDesc = document.getElementById('gformDesc').value.trim();
-            const targetedCourseConstraint = document.getElementById('gformTargetCourseRestriction').value;
-            const compiledCards = document.querySelectorAll('#gformQuestionsSandbox .gform-card');
-
-            let schemaQuestionsArray = [];
-            compiledCards.forEach(card => {
-                const questionText = card.querySelector('.q-text-value').value.trim();
-                const questionType = card.querySelector('.q-type-selector').value;
-                let qDefinitionNode = { type: questionType, text: questionText };
-
-                if (questionType === 'mc') {
-                    let choices = [];
-                    let determinedCorrectStringValue = '';
-                    const optionRows = card.querySelectorAll('.option-row');
-
-                    optionRows.forEach(row => {
-                        const optionTextString = row.querySelector('.mc-opt-value').value.trim();
-                        choices.push(optionTextString);
-                        if (row.querySelector('.correct-key-radio-select').checked) {
-                            determinedCorrectStringValue = optionTextString;
-                        }
-                    });
-                    qDefinitionNode.options = choices;
-                    qDefinitionNode.correctAns = determinedCorrectStringValue || choices[0] || '';
-                }
-                schemaQuestionsArray.push(qDefinitionNode);
-            });
-
-            try {
-                await _apiFetch('api/create_evaluation_form.php', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        title: formTitle,
-                        description: formDesc,
-                        targetCourse: targetedCourseConstraint,
-                        questions: schemaQuestionsArray,
-                        created_by: CURRENT_ACTIVE_SESSION_USER?.id,
-                    }),
-                });
-                alert('Google Forms Evaluation distributed successfully!');
-                resetGoogleFormsCanvas();
-                await loadEvaluationForms();
-                switchTrainerHubViewMode('tracker');
-            } catch (error) {
-                console.error('Create evaluation form failed', error);
-                alert('Unable to create evaluation form.');
-            }
-        }
-
-        async function renderTrainerDistributedTrackerLogs() {
-            await loadEvaluationForms();
-            const trackerList = document.getElementById('trainerEvaluationFeedList');
-            if (!trackerList) return;
-            trackerList.innerHTML = '';
-
-            DISTRIBUTED_EVALUATIONS_DB.forEach(formItem => {
-                const totalResponses = formItem.submittedResponsesLogs?.length || 0;
-                const targetTrainees = Object.keys(SYSTEM_USERS_REPOSITORY).filter(email => SYSTEM_USERS_REPOSITORY[email].role === 'trainee').length;
-                const row = document.createElement('div');
-                row.className = 'trainer-appraisal-card';
-                row.innerHTML = `
-                    <div class="trainer-appraisal-card-header">
-                        <div>
-                            <h4>${formItem.title}</h4>
-                            <div class="trainer-appraisal-course">${formItem.targetCourse}</div>
-                        </div>
-                        <span class="evaluation-status-pill">${totalResponses ? 'Submitted' : 'Awaiting Response'}</span>
-                    </div>
-                    <p>${formItem.description}</p>
-                    <div class="trainer-appraisal-card-footer">
-                        <span>${totalResponses} trainee responses</span>
-                        <button type="button" class="btn btn-secondary btn-sm" onclick="openEvaluationWorkspace('${formItem.id}')">Open Form</button>
-                    </div>
-                `;
-                trackerList.appendChild(row);
-            });
-        }
-
-        async function renderTraineeEvaluationFeedList() {
-            document.getElementById('evalActiveFormWorkspace').style.display = 'none';
-            document.getElementById('evalFeedListView').style.display = 'block';
-
-            await loadEvaluationForms();
-            const feedContainer = document.getElementById('traineeEvalFeedContainer');
-            feedContainer.innerHTML = '';
-
-            const targetedFormsCollection = DISTRIBUTED_EVALUATIONS_DB.filter(ev => 
-                ev.targetCourse === 'All Tracks' || ev.targetCourse === CURRENT_ACTIVE_SESSION_USER.track
-            );
-
-            if (targetedFormsCollection.length === 0) {
-                feedContainer.innerHTML = `<p class="text-muted" style="text-align:center; padding: 20px 0;">No pending evaluation matrices mapped to your profile track.</p>`;
-                return;
-            }
-
-            targetedFormsCollection.forEach(evalBlock => {
-                const isAlreadySubmitted = evalBlock.submittedResponsesLogs.some(r => r.userEmail === CURRENT_ACTIVE_SESSION_USER.email);
-                const itemRow = document.createElement('div');
-                itemRow.className = 'learning-item';
-                itemRow.style.display = 'flex';
-                itemRow.style.justifyContent = 'between';
-                itemRow.style.alignItems = 'center';
-
-                const badgeStatus = isAlreadySubmitted ? 
-                    `<span class="badge badge-success">Completed Submission Matrix</span>` : 
-                    `<span class="badge badge-warning">Awaiting Response Input</span>`;
-
-                const actionTriggerButton = !isAlreadySubmitted ? 
-                    `<button class="btn btn-primary btn-sm" onclick="openEvaluationWorkspace('${evalBlock.id}')">Launch Assessment Workspace</button>` : 
-                    `<button class="btn btn-secondary btn-sm" disabled style="opacity:0.4;">Submission Archived</button>`;
-
-                itemRow.innerHTML = `
-                    <div style="flex:1;">
-                        <div class="learning-title" style="font-weight:600; font-size:16px; color:#fff;">${evalBlock.title}</div>
-                        <div class="text-muted" style="font-size:13px; margin-top:4px;">${evalBlock.description}</div>
-                        <div style="margin-top:8px;"><span class="pill-accent" style="margin-right:10px;"><i class="bi bi-shield-lock"></i> Track Scope: ${evalBlock.targetCourse}</span> ${badgeStatus}</div>
-                    </div>
-                    <div>${actionTriggerButton}</div>
-                `;
-                feedContainer.appendChild(itemRow);
-            });
-            updateTraineeBadgeCounters();
-        }
-
-        async function submitTraineeFormAnswers(e) {
-            e.preventDefault();
-            const targetEvalRecord = DISTRIBUTED_EVALUATIONS_DB.find(ev => ev.id === CURRENTLY_OPENED_WORKSPACE_EVAL_ID);
-            if (!targetEvalRecord) return;
-
-            const answers = targetEvalRecord.questions.map((q, idx) => {
-                let userAnswer = '';
-                if (q.type === 'paragraph') {
-                    const txtArea = document.querySelector(`.answer-paragraph-input-node[data-qindex="${idx}"]`);
-                    userAnswer = txtArea ? txtArea.value.trim() : '';
-                } else {
-                    const selected = document.querySelector(`input[name="workspace_q_index_${idx}"]:checked`);
-                    userAnswer = selected ? selected.value : '';
-                }
-                return {
-                    question_id: q.id,
-                    answer: userAnswer,
-                };
-            });
-
-            if (answers.some(a => !a.answer)) {
-                if (!confirm('Some questions are unanswered. Submit anyway?')) {
-                    return;
-                }
-            }
-
-            try {
-                await _apiFetch('api/submit_evaluation.php', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        form_id: targetEvalRecord.id,
-                        user_id: CURRENT_ACTIVE_SESSION_USER.id,
-                        answers,
-                    }),
-                });
-                alert('Evaluation submitted successfully!');
-                exitEvaluationWorkspace();
-            } catch (error) {
-                console.error('Submit evaluation failed', error);
-                alert('Unable to submit evaluation.');
-            }
-        }
-
-        function openEvaluationWorkspace(evaluationId) {
-            const selectedEvalObj = DISTRIBUTED_EVALUATIONS_DB.find(ev => ev.id === evaluationId);
-            if (!selectedEvalObj) return;
-
-            CURRENTLY_OPENED_WORKSPACE_EVAL_ID = evaluationId;
-            document.getElementById('evalFeedListView').style.display = 'none';
-            document.getElementById('evalActiveFormWorkspace').style.display = 'block';
-
-            document.getElementById('activeWorkspaceTitle').innerText = selectedEvalObj.title;
-            document.getElementById('activeWorkspaceDesc').innerText = selectedEvalObj.description;
-
-            const questionsContainer = document.getElementById('activeWorkspaceQuestionsContainer');
-            questionsContainer.innerHTML = '';
-
-            selectedEvalObj.questions.forEach((q, idx) => {
-                const qCard = document.createElement('div');
-                qCard.className = 'card';
-                qCard.dataset.questionId = q.id;
-                qCard.innerHTML = `<div class="form-label" style="font-size:16px; font-weight:600; margin-bottom:15px; color:#fff;">${idx + 1}. ${q.text}</div>`;
-
-                if (q.type === 'scale') {
-                    let scaleMarkupOptions = `<div style="display:flex; justify-content:space-between; max-width:400px; margin: 10px 0;">`;
-                    for (let i = 1; i <= 5; i++) {
-                        scaleMarkupOptions += `
-                            <div style="text-align:center;">
-                                <input type="radio" name="workspace_q_index_${idx}" value="${i}" id="scale_entry_${idx}_${i}" required style="width:20px; height:20px; cursor:pointer;">
-                                <label for="scale_entry_${idx}_${i}" style="display:block; font-size:12px; margin-top:4px; color:#aaa;">${i}</label>
-                            </div>
-                        `;
-                    }
-                    scaleMarkupOptions += `</div><div class="flex justify-between" style="max-width:400px; font-size:11px; color:#888;"><span>1 - Deficiency Found</span><span>5 - Mastered Competency</span></div>`;
-                    qCard.innerHTML += scaleMarkupOptions;
-                } else if (q.type === 'paragraph') {
-                    qCard.innerHTML += `
-                        <div class="form-group">
-                            <textarea class="form-input answer-paragraph-input-node" data-qindex="${idx}" placeholder="Type your narrative open-ended appraisal response text insights here completely..." rows="4" required style="background-color: var(--surface-bg); color:#fff;"></textarea>
-                        </div>
-                    `;
-                } else if (q.type === 'mc') {
-                    let mcMarkupOptions = `<div style="margin: 10px 0;">`;
-                    (q.options || []).forEach((optValue, optIdx) => {
-                        mcMarkupOptions += `
-                            <div class="eval-option-row">
-                                <input type="radio" name="workspace_q_index_${idx}" value="${optValue}" id="mc_entry_${idx}_${optIdx}" required style="width:18px; height:18px; cursor:pointer;">
-                                <label for="mc_entry_${idx}_${optIdx}" style="color:#aaa; cursor:pointer; font-size:14px;">${optValue}</label>
-                            </div>
-                        `;
-                    });
-                    mcMarkupOptions += `</div>`;
-                    qCard.innerHTML += mcMarkupOptions;
-                }
-                questionsContainer.appendChild(qCard);
-            });
-        }
-    </script>
 </body>
 </html>

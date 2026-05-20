@@ -326,10 +326,12 @@ body {
 
 #loginPage .login-card .form-input {
     width: 100%;
+    box-sizing: border-box;
     padding: 14px 14px 14px 44px;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.04);
     color: var(--text-light);
+    min-height: 52px;
 }
 
 #loginPage .login-card .form-input:focus {
